@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
 
-    fetch(apiEndpoint) // featch all the data from the API
+    fetch(apiEndpoint) // fetch all the data from the API
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itemList.appendChild(li);
         });
 
-        getMovie(1);
+        getMovie(1);//First movie details to display upon opening
 });
 
 function getMovie(movieId) {
@@ -53,7 +53,7 @@ function getMovie(movieId) {
             return response.json();
         })
         .then(data => {
-            const remainingTickets = data["capacity"] - data["tickets_sold"];
+            const remainingTickets = data["capacity"] - data["tickets_sold"];// To calculate number of remaining tickets
             title.textContent = data["title"] || JSON.stringify(data["title"]);
             runtime.textContent = data["runtime"] || JSON.stringify(data["runtime"] ) + "minutes";
             filmInfo.textContent = data["description"] || JSON.stringify(data["description"]);
@@ -79,7 +79,7 @@ function getMovie(movieId) {
 
 }
 
-function updataMovie(movieId, tickets_sold){
+function updateMovie(movieId, tickets_sold) {
 
     endpointUrl = 'http://localhost:3000/films/' + movieId
     tickets_sold = parseInt(tickets_sold)

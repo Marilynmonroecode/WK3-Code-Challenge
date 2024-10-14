@@ -1,3 +1,6 @@
+Author : Marilyn Musyimi October 14th 2024
+
+Project Description
 # Flatdango
 
 Flatiron Movie Theater is open for business! You will be building out an
@@ -176,9 +179,18 @@ attempting the bonus deliverables!**
    details with the new movie's details. Note that you may have to make an
    additional GET request to access the movie's details.
 
+Technologies Used
+. HTML
+. CSS
+. JavaScript
 
 
+Contact Information
+github : https://github.com/Marilynmonroecode
 
+
+License
+MIT License Copyright (c) 2024 Marilyn Musyimi
 
 
 
